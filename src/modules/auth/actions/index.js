@@ -18,19 +18,13 @@ export const onBoardUser = async () => {
         clerkId: id,
       },
       update: {
-        name:
-          firstName && lastName
-            ? `${firstName} ${lastName}`
-            : firstName || lastName || null,
+        name: firstName && lastName ? `${firstName} ${lastName}` : firstName || lastName || null,
         image: imageUrl || null,
         email: emailAddresses[0]?.emailAddress || "",
       },
       create: {
         clerkId: id,
-        name:
-          firstName && lastName
-            ? `${firstName} ${lastName}`
-            : firstName || lastName || null,
+        name: firstName && lastName ? `${firstName} ${lastName}` : firstName || lastName || null,
         image: imageUrl || null,
         email: emailAddresses[0]?.emailAddress || "",
       },
